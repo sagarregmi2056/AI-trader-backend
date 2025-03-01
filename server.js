@@ -20,6 +20,7 @@ const rateLimit = require('express-rate-limit');
 const tokenRoutes = require('./routes/tokens');
 const http = require('http');
 const settingsController = require('./controllers/settingsController');
+const healthRoutes = require('./routes/health');
 
 // Initialize Express app
 const app = express();
@@ -86,6 +87,7 @@ app.get('/api/token-analysis/:symbol', async (req, res) => {
 
 // Token routes
 app.use('/api/tokens', tokenRoutes);
+app.use('/api/health', healthRoutes);
 
 // Add Swagger documentation
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
