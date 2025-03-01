@@ -1,0 +1,9 @@
+{
+  "maxInvestmentPerTrade": 1,
+  "takeProfitPercentage": 50,
+  "stopLossPercentage": 20,
+  "enableAITrading": true,
+  "minimumLiquidity": 10,
+  "skipSuspiciousTokens": true,
+  "onlyVerifiedDEX": true
+}

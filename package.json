@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "@solana/spl-token": "^0.4.12",
+    "@solana/web3.js": "^1.98.0",
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.10.1",
+    "openai": "^4.85.1",
+    "puppeteer": "^24.2.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "ws": "^8.18.0"
+  },
+  "name": "solana-ai-trader-backend",
+  "version": "1.0.0",
+  "description": "SolanaAI Trader is an advanced AI-powered platform designed to protect traders from rugpulls and scams in the Solana ecosystem. Currently in development mode, our platform uses cutting-edge AI to analyze tokens, detect potential risks, and provide real-time trading insights.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "rebuild": "npm rebuild"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

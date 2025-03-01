@@ -1,0 +1,59 @@
+paths:
+  /api/tokens/{address}:
+    get:
+      summary: Get token metadata
+      parameters:
+        - in: path
+          name: address
+          required: true
+          schema:
+            type: string
+          description: Token contract address
+      responses:
+        200:
+          description: Token metadata retrieved successfully
+        404:
+          description: Token not found
+        500:
+          description: Server error
+
+  /api/token-analysis/{symbol}:
+    get:
+      summary: Get complete token analysis
+      parameters:
+        - in: path
+          name: symbol
+          required: true
+          schema:
+            type: string
+          description: Token symbol
+        - in: query
+          name: contract
+          schema:
+            type: string
+          description: Contract address
+      responses:
+        200:
+          description: Analysis retrieved successfully
+        404:
+          description: Token not found
+        500:
+          description: Server error
+
+  /api/token/{contractAddress}/twitter-metrics:
+    get:
+      summary: Get Twitter metrics for token
+      parameters:
+        - in: path
+          name: contractAddress
+          required: true
+          schema:
+            type: string
+          description: Token contract address
+      responses:
+        200:
+          description: Twitter metrics retrieved successfully
+        404:
+          description: Token not found
+        500:
+          description: Server error 
