@@ -122,10 +122,11 @@ app.use('/api/settings', settingsRouter);
 
 // Start server
 const PORT = process.env.PORT || 3000;
+const wsPort = process.env.WS_PORT || 8000;
 server.listen(PORT, () => {
     console.log('='.repeat(50));
     console.log(`Server running on port ${PORT}`);
-    console.log(`WebSocket server running on ws://localhost:${PORT}`);
+    console.log(`WebSocket server running on ws://localhost:${wsPort}`);
     console.log(`API Documentation: http://localhost:${PORT}/api-docs`);
     console.log('='.repeat(50));
 });
